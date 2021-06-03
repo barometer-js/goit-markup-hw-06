@@ -604,6 +604,9 @@ body {
   text-align: start;
 }
 
+.footer-sotial-list-container {
+  margin-right: 93px;
+}
 .footer-sotial-list {
   display: flex;
   align-items: center;
@@ -630,6 +633,19 @@ body {
   /* width: 20px;
   height: 20px; */
   fill: var(--main-font-color-dark-bg);
+}
+
+.footer-call-to-subscription {
+  display: inline-block;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-font-color-dark-bg);
+  margin-bottom: 20px;
 }
 /* ============= FOOTER END ============= */
 
