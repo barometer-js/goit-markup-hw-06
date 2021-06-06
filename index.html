@@ -347,13 +347,13 @@
                 <address class="footer-address">
                     <ul class="footer-list list">
                         <li class="footer-list-item">
-                            <a class="footer-map-link vertical-padding-button link" href="https://goo.gl/maps/yjC53x2u7ZF1c42Y8" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a>
+                            <a class="footer-map-link link" href="https://goo.gl/maps/yjC53x2u7ZF1c42Y8" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a>
                         </li>
                         <li class="footer-list-item">
-                            <a class="footer-mail-link vertical-padding-button link" href="mailto:info@example.com">info@example.com</a>
+                            <a class="footer-mail-link link" href="mailto:info@example.com">info@example.com</a>
                         </li>
                         <li class="footer-list-item">
-                            <a class="footer-tel-link vertical-padding-button link" href="tel:+380991111111">+38 099 111 11 11</a>
+                            <a class="footer-tel-link link" href="tel:+380991111111">+38 099 111 11 11</a>
                         </li>
                     </ul>
                 </address>
@@ -394,10 +394,14 @@
             <div class="container-footer-subscription">
                 <b class="footer-call-to-subscription">Подпишитесь на рассылку</b>
                 <form action="" class="footer-subscription">
-                    <label for="">
-                        <input type="mail" placeholder="E-mail">
+                    <label>
+                        <input type="mail" placeholder="E-mail" class="footer-mail-input">
                     </label>
-                    <button type="submit">Подписаться</button>
+                    <button type="submit" class="footer-button buttom">Подписаться
+                        <svg class="footer-button-icon" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
                 </form>
             </div>
         </div>
@@ -410,6 +414,24 @@
                     <use href="./images/sprite.svg#icon-close-black"></use>
                 </svg>
            </button> 
+           <form action="#" class="modal-form">
+               <p class="modal-form-head">Оставьте свои данные, мы вам перезвоним</p>
+               <lable class="modal-form-field">Имя
+                   <input type="text" name="user-name" class="modal-form-input" required>
+               </lable>
+               <lable class="modal-form-field">Телефон
+                   <input type="tel" name="user-tel" class="modal-form-input" required>
+               </lable>
+               <lable class="modal-form-field">Почта
+                   <input type="mail" name="user-mail" class="modal-form-input" required>
+               </lable>
+               <lable class="modal-form-field">Комментарий
+                   <textarea name="user-massege" class="modal-form-message"></textarea>
+               </lable>
+               <input type="checkbox" name="user-policy" class="modal-form-checkbox" id="checkbox-policy" required>
+               <label for="checkbox-policy" class="modal-form-checkbox-policy">Соглашаюсь с рассылкой и принимаю <a class="modal-form-policy-link" href="#">Условия договора</a></label>
+               <button type="submit" class="modal-form-submit-button">Отправить</button>
+           </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
